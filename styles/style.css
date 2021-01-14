@@ -721,6 +721,7 @@ img {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
+  transition: opacity var(--time-transition) var(--function-bezier);
 }
 
 .backdrop.is-hidden {
@@ -742,7 +743,7 @@ img {
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.8);
+  transform: translate(-50%, -50%) scale(0.9);
 }
 
 /* Btn close modal window */

@@ -19,7 +19,7 @@
   --accent-color: #2196f3;
 
   --function-bezier: cubic-bezier(0.4, 0, 0.2, 1);
-  --time-transition: 1s;
+  --time-transition: 250ms;
 }
 
 body {
@@ -721,13 +721,15 @@ img {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opaсity var(--time-transition) var(--function-bezier);
 }
+
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
+
 /* modal */
+
 .modal {
   position: absolute;
   top: 50%;

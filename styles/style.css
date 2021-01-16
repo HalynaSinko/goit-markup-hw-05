@@ -644,6 +644,8 @@ img {
 
 .portfolio-link {
   display: block;
+  box-shadow: none;
+  transition: box-shadow var(--time-transition) var(--function-bezier);
 }
 
 .card {
@@ -688,8 +690,7 @@ img {
   box-shadow: none;
 
   transform: translateY(100%);
-  transition: transform var(--time-transition) var(--function-bezier),
-    box-shadow var(--time-transition) var(--function-bezier);
+  transition: transform var(--time-transition) var(--function-bezier);
 }
 
 .description {
@@ -701,7 +702,8 @@ img {
   color: var(--dark-main-color);
 }
 
-.portfolio-link:hover .portfolio-overlay {
+.portfolio-link:hover .portfolio-overlay,
+.portfolio-link:focus .portfolio-overlay {
   transform: translateY(0);
 }
 
